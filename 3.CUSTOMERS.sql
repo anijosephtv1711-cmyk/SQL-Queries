@@ -1,0 +1,80 @@
+CREATE  TABLE CUSTOMERS (ID INT, NAME VARCHAR (50))
+
+INSERT INTO CUSTOMERS VALUES 
+(1,'Joe'),
+(2,'Henry'),
+(3,'Sam'),
+(4,'Max');
+
+SELECT * FROM  CUSTOMERS
+
+CREATE  TABLE ORDERS (ID INT, customerid INT)
+INSERT INTO ORDERS VALUES
+(2,1),
+(1,3);
+
+SELECT * FROM ORDERS
+
+SELECT NAME FROM CUSTOMERS
+LEFT OUTER JOIN ORDERS
+ON CUSTOMERS.ID = ORDERS.customerid WHERE orders.id IS NULL;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
